@@ -4,6 +4,13 @@ Utilities and install guide to setup a fresh mac install for Front-end developme
 
 ## Table of contents
 
+1. [Install Xcode](#install-xcode-and-xcode-command-line-tools)
+2. [Setup ssh key](#setup-ssh-key)
+3. [Get Homebrew and applications](#homebrew)
+4. [Setup git](#setup-git)
+
+---
+
 ## Install XCode and Xcode Command line tools
 
 Install Xcode from the App store, then install Xcode Command line tools in terminal:
@@ -11,9 +18,13 @@ Install Xcode from the App store, then install Xcode Command line tools in termi
 $ xcode-select --install
 ```
 
-## Mas
+---
 
-Used to install from appstore on command line.
+## [Setup ssh key](https://docs.joyent.com/public-cloud/getting-started/ssh-keys/generating-an-ssh-key-manually/manually-generating-your-ssh-key-in-mac-os-x)
+
+Follow steps and use for git / other ssh services.
+
+---
 
 ## [Homebrew](https://brew.sh/)
 
@@ -29,19 +40,7 @@ Installs applications on command line.
 - Browsers (Chrome, Firefox)
 - Node Package Manager (npm)
 
-## Node with node version manager (nvm)
-
-- [Install nvm](https://github.com/creationix/nvm) and restart terminal
-- install latest node:
-
-  ```bash
-  $ nvm install node
-  ```
-- Use it
-
-  ```bash
-  $ nvm use node
-  ```
+---
 
 ## Setup Git
 
@@ -83,10 +82,23 @@ Colors:
 	untracked = cyan
 ```
 
-## [Setup ssh key](https://docs.joyent.com/public-cloud/getting-started/ssh-keys/generating-an-ssh-key-manually/manually-generating-your-ssh-key-in-mac-os-x)
+---
 
-Follow steps and use for git / other ssh services.
+## Node with node version manager (nvm)
 
+- [Install nvm](https://github.com/creationix/nvm) and restart terminal
+- install latest node:
+
+  ```bash
+  $ nvm install node
+  ```
+- Use it
+
+  ```bash
+  $ nvm use node
+  ```
+
+---
 
 ## Setup .bashrc && .bash_profile
 
