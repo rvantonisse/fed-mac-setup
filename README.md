@@ -54,39 +54,9 @@ Installs applications on command line.
 
 ### Global config
 
-Create / Add following lines to ~/.gitconfig.
-
+Copy the `.gitconfig` to `~/` and edit `<…>`-fields:
 ```bash
-$ touch .gitconfig && atom .gitconfig
-```
-
-```
-[user]
-    name = <YOUR NAME>
-[alias]
-    co = checkout
-    co-master = checkout master
-    mm = merge master
-    new-branch = checkout -b
-    remove-local = branch -D
-    remove-remote = branch -rd
-[color]
-  	branch = auto
-  	diff = auto
-  	status = auto
-[color "branch"]
-  	current = yellow reverse
-  	local = yellow
-  	remote = green
-[color "diff"]
-  	meta = yellow bold
-  	frag = magenta bold
-  	old = red bold
-  	new = green bold
-[color "status"]
-  	added = yellow
-  	changed = green
-  	untracked = cyan
+$ cp git-setup/.gitconfig ~/ && atom .gitconfig
 ```
 
 ---
