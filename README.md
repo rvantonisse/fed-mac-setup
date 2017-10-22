@@ -2,6 +2,8 @@
 
 Utilities and install guide to setup a fresh mac install for Front-end development. Unzip this locally and follow this guide.
 
+Open up a terminal and go to this unzipped folder `fed-mac-setup`. All commands should be run from there.
+
 ## Table of contents
 
 1. [Install Xcode](#install-xcode-and-xcode-command-line-tools)
