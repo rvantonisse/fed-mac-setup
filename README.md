@@ -17,6 +17,7 @@ Open up a terminal and go to this unzipped folder `fed-mac-setup`. All commands 
 
 Install Xcode from the App store, then install Xcode Command line tools in terminal:
 ```bash
+# This step may be skipped, Homebrew will install this for you.
 $ xcode-select --install
 ```
 
@@ -32,9 +33,10 @@ Follow steps and use for git / other ssh services.
 
 Package manager for mac. Follow install instructions for Homebrew then after run:
 ```bash
-# Where Brewfile lives
 $ brew tap homebrew/bundle && brew bundle
 ```
+
+This will install everything listed inside Brewfile.
 
 ### [Caskroom/cask](https://caskroom.github.io/)
 
@@ -45,7 +47,6 @@ Installs applications on command line.
 - Atom (editor)
 - Browsers (Chrome, Firefox)
 - iTerm (command line interface)
-- Node Package Manager (npm)
 - Python
 
 ---
