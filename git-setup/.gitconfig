@@ -1,0 +1,29 @@
+[user]
+    name = <YOUR NAME>
+    email = <YOUR@EMAIL.COM>
+[github]
+    user = <YOUR GITHUB USERNAME>
+[alias]
+    co = checkout
+    co-master = checkout master
+    mm = merge master
+    new-branch = checkout -b
+    remove-local = branch -D
+    remove-remote = branch -rd
+[color]
+  	branch = auto
+  	diff = auto
+  	status = auto
+[color "branch"]
+  	current = yellow reverse
+  	local = yellow
+  	remote = green
+[color "diff"]
+  	meta = yellow bold
+  	frag = magenta bold
+  	old = red bold
+  	new = green bold
+[color "status"]
+  	added = yellow
+  	changed = green
+  	untracked = cyan
