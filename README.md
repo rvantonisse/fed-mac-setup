@@ -36,9 +36,11 @@ Installs applications on command line.
 
 ### Use Brewfile to install
 
-- Atom
+- Atom (editor)
 - Browsers (Chrome, Firefox)
+- iTerm (command line interface)
 - Node Package Manager (npm)
+- Python
 
 ---
 
@@ -97,6 +99,14 @@ Colors:
   ```bash
   $ nvm use node
   ```
+
+---
+
+## Install Python utilities
+
+Use `pip install` for python global dependencies.
+
+- Check on [pipenv and virtualenv](http://docs.python-guide.org/en/latest/dev/virtualenvs/) for best approach.
 
 ---
 
