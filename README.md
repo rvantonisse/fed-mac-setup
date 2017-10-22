@@ -1,6 +1,6 @@
 # Front-end development mac setup
 
-Utilities and install guide to setup a fresh mac install for Front-end development.
+Utilities and install guide to setup a fresh mac install for Front-end development. Unzip this locally and follow this guide.
 
 ## Table of contents
 
@@ -28,7 +28,11 @@ Follow steps and use for git / other ssh services.
 
 ## [Homebrew](https://brew.sh/)
 
-Package manager for mac.
+Package manager for mac. Follow install instructions for Homebrew then after run:
+```bash
+# Where Brewfile lives
+$ brew tap homebrew/bundle && brew bundle
+```
 
 ### [Caskroom/cask](https://caskroom.github.io/)
 
@@ -48,23 +52,22 @@ Installs applications on command line.
 
 ### Global config
 
-Add following lines to ~/.gitconfig.
+Create / Add following lines to ~/.gitconfig.
 
-Aliasses:
+```bash
+$ touch .gitconfig && atom .gitconfig
+```
 
 ```
+[user]
+    name = <YOUR NAME>
 [alias]
-  co = checkout
-  co-master = checkout master
-  mm = merge master
-  new-branch = checkout -b
-  remove-local = branch -D
-  remove-remote = branch -rd
-```
-
-Colors:
-
-```
+    co = checkout
+    co-master = checkout master
+    mm = merge master
+    new-branch = checkout -b
+    remove-local = branch -D
+    remove-remote = branch -rd
 [color]
 	branch = auto
 	diff = auto
@@ -112,4 +115,16 @@ Use `pip install` for python global dependencies.
 
 ## Setup .bashrc && .bash_profile
 
-Some usefull .bash* utilities.
+Create a `.bash_profile`:
+
+```bash
+$ touch .bash_profile && atom .bash_profile
+```
+
+Add following:
+
+```bash
+# Bash completion
+[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+
+```
