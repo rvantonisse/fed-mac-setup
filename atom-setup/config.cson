@@ -1,0 +1,36 @@
+"*":
+  "autocomplete-plus": {}
+  core:
+    allowPendingPaneItems: false
+    reopenProjectMenuCount: 5
+    telemetryConsent: "no"
+    themes: [
+      "chameleon-ui"
+      "triad-light-syntax"
+    ]
+  date: {}
+  editor:
+    fontSize: 14
+    scrollPastEnd: true
+    showIndentGuide: true
+  "exception-reporting":
+    userId: "ecbf3163-8bac-197e-8e91-ef512206846b"
+  "file-icons":
+    coloured: false
+  "git-diff": {}
+  linter: {}
+  "linter-stylelint":
+    disableWhenNoConfig: false
+    useStandard: true
+  "linter-ui-default":
+    panelHeight: 355
+  minimap: {}
+  "one-light-ui": {}
+  "theme-switch":
+    profiles: [
+      "chameleon-ui triad-light-syntax"
+      "chameleon-ui triad-dark-syntax"
+    ]
+  "tree-view": {}
+  welcome:
+    showOnStartup: false
