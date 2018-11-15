@@ -5,11 +5,10 @@
     user = <YOUR GITHUB USERNAME>
 [alias]
     co = checkout
-    co-master = checkout master
+    com = checkout master
     mm = merge master
-    new-branch = checkout -b
-    remove-local = branch -D
-    remove-remote = branch -rd
+    pushup = push --set-upstream
+    gignore = "!gi() { curl -L -s https://www.gitignore.io/api/$@ ;}; gi"
 [color]
   	branch = auto
   	diff = auto
