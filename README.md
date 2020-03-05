@@ -23,7 +23,7 @@ $ xcode-select --install
 
 ---
 
-## [Setup ssh key](https://docs.joyent.com/public-cloud/getting-started/ssh-keys/generating-an-ssh-key-manually/manually-generating-your-ssh-key-in-mac-os-x)
+## [Setup ssh key](https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
 
 Follow steps and use for git / other ssh services.
 
