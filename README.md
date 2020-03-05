@@ -16,9 +16,21 @@ Open up a terminal and go to this unzipped folder `fed-mac-setup`. All commands 
 ## Install XCode and Xcode Command line tools
 
 Install Xcode from the App store, then install Xcode Command line tools in terminal:
+
 ```bash
 # This step may be skipped, Homebrew will install this for you.
 $ xcode-select --install
+```
+
+---
+
+## Setup .bashrc && .bash_profile
+
+copy bash profile:
+```bash
+cp ./bash-setup/bash_profile.sh ~/.bash_profile
+
+cp ./bash-setup/bash_prompt.sh ~/bash_prompt.sh
 ```
 
 ---
@@ -33,7 +45,7 @@ Follow steps and use for git / other ssh services.
 
 Package manager for mac. Follow install instructions for Homebrew then after run:
 ```bash
-$ brew tap homebrew/bundle && brew bundle
+brew tap homebrew/bundle && brew bundle
 ```
 
 This will install everything listed inside Brewfile.
@@ -47,7 +59,13 @@ Installs applications on command line.
 - Atom (editor)
 - Browsers (Chrome, Firefox)
 - iTerm (command line interface)
+- FileZilla
+- Virtualbox
+- nvm (node)
+- yarn (without node)
+- PHP, Composer
 - Python
+- rbenv (Ruby version manager)
 
 ---
 
@@ -56,24 +74,25 @@ Installs applications on command line.
 ### Global config
 
 Copy the `.gitconfig` to `~/` and edit `<…>`-fields:
+
 ```bash
-$ cp git-setup/.gitconfig ~/ && atom .gitconfig
+cp .git-setup/.gitconfig ~/ && atom .gitconfig
 ```
 
 ---
 
 ## Node with node version manager (nvm)
 
-- [Install nvm](https://github.com/creationix/nvm) and restart terminal
-- install latest node:
+- install latest node version:
 
   ```bash
-  $ nvm install node
+  nvm install node
   ```
+
 - Use it
 
   ```bash
-  $ nvm use node
+  nvm use node
   ```
 
 ---
@@ -83,21 +102,3 @@ $ cp git-setup/.gitconfig ~/ && atom .gitconfig
 Use `pip install` for python global dependencies.
 
 - Check on [pipenv and virtualenv](http://docs.python-guide.org/en/latest/dev/virtualenvs/) for best approach.
-
----
-
-## Setup .bashrc && .bash_profile
-
-Create a `.bash_profile`:
-
-```bash
-$ touch .bash_profile && atom .bash_profile
-```
-
-Add following:
-
-```bash
-# Bash completion
-[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
-
-```
