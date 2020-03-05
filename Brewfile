@@ -14,7 +14,6 @@ brew "python"
 brew "python@2"
 brew "rbenv"
 brew "yarn", args: ["without-node"]
-brew "z"
 cask "atom"
 cask "filezilla"
 cask "google-chrome"
