@@ -30,8 +30,13 @@
 # If you are unfamiliar with CSON, you can read more about it in the
 # Atom Flight Manual:
 # https://atom.io/docs/latest/using-atom-basic-customization#cson
+'atom-workspace':
+  # Whitespace
+  'ctrl-cmd-backspace': 'whitespace:remove-trailing-whitespace',
+
 
 'atom-text-editor':
+  # Theme switch
   'ctrl-cmd-,': 'theme-switch:prev',
   'ctrl-cmd-.': 'theme-switch:next',
 
@@ -42,3 +47,6 @@
   # date
   'cmd-shift-d': 'date:date',
   'cmd-shift-h': 'date:time',
+
+  # Markdown preview
+  'alt-cmd-m': 'markdown-preview:toggle'

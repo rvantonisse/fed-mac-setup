@@ -1,36 +1,56 @@
 "*":
-  "autocomplete-plus": {}
+  "color-picker":
+    preferredFormat: "HEX"
   core:
     allowPendingPaneItems: false
-    reopenProjectMenuCount: 5
-    telemetryConsent: "no"
+    disabledPackages: [
+      "spell-check"
+    ]
+    packagesWithKeymapsDisabled: []
+    telemetryConsent: "limited"
     themes: [
       "chameleon-ui"
       "triad-light-syntax"
     ]
-  date: {}
+  date:
+    dateFormat: "YYYY-MM-DD"
   editor:
-    fontSize: 14
-    scrollPastEnd: true
+    fontSize: 16
     showIndentGuide: true
   "exception-reporting":
-    userId: "ecbf3163-8bac-197e-8e91-ef512206846b"
+    userId: "f8817c57-018d-4f63-b862-30853b8b7c15"
   "file-icons":
     coloured: false
-  "git-diff": {}
-  linter: {}
-  "linter-stylelint":
-    disableWhenNoConfig: false
-    useStandard: true
+  github: {}
+  "linter-eslint":
+    autofix:
+      ignoreFixableRulesWhileTyping: true
+    global:
+      globalNodePath: "/Users/rvantonisse/.nvm/versions/node/v8.12.0"
   "linter-ui-default":
-    panelHeight: 355
-  minimap: {}
-  "one-light-ui": {}
+    showPanel: true
+  minimap:
+    plugins:
+      "git-diff": true
+      "git-diffDecorationsZIndex": 0
+  "prettier-atom":
+    prettierEslintOptions:
+      prettierLast: true
+    useEslint: true
+    useStylelint: true
   "theme-switch":
     profiles: [
       "chameleon-ui triad-light-syntax"
       "chameleon-ui triad-dark-syntax"
     ]
-  "tree-view": {}
   welcome:
     showOnStartup: false
+".git-config.source":
+  editor:
+    tabLength: 4
+".json.source":
+  editor:
+    tabLength: 4
+".json.source.twig":
+  editor:
+    tabLength: 4
