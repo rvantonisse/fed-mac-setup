@@ -18,8 +18,8 @@ Open up a terminal and go to this unzipped folder `fed-mac-setup`. All commands 
 Install Xcode from the App store, then install Xcode Command line tools in terminal:
 
 ```bash
-# This step may be skipped, Homebrew will install this for you.
-$ xcode-select --install
+    # This step may be skipped, Homebrew will install this for you.
+    xcode-select --install
 ```
 
 ---
@@ -27,10 +27,11 @@ $ xcode-select --install
 ## Setup .bashrc && .bash_profile
 
 copy bash profile:
-```bash
-cp ./bash-setup/bash_profile.sh ~/.bash_profile
 
-cp ./bash-setup/bash_prompt.sh ~/bash_prompt.sh
+```bash
+    cp ./bash-setup/bash_profile.sh ~/.bash_profile
+
+    cp ./bash-setup/bash_prompt.sh ~/bash_prompt.sh
 ```
 
 ---
@@ -43,9 +44,17 @@ Follow steps and use for git / other ssh services.
 
 ## [Homebrew](https://brew.sh/)
 
-Package manager for mac. Follow install instructions for Homebrew then after run:
+Install:
+
 ```bash
-brew tap homebrew/bundle && brew bundle
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+```
+
+
+Package manager for mac. Follow install instructions for Homebrew then after run:
+
+```bash
+    brew tap homebrew/bundle && brew bundle
 ```
 
 This will install everything listed inside Brewfile.
