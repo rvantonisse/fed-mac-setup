@@ -1,30 +1,52 @@
 # Front-end development mac setup
 
-Utilities and install guide to setup a fresh mac install for Front-end development. Unzip this locally and follow this guide.
-
-Open up a terminal and go to this unzipped folder `fed-mac-setup`. All commands should be run from there.
+Utilities and install guide to setup a fresh mac install for Front-end development.
 
 ## Table of contents
 
-1. [Install Xcode](#install-xcode-and-xcode-command-line-tools)
+0. [Download this project](#download-this-project)
+1. Install software with Homebrew
 2. [Setup ssh key](#setup-ssh-key)
-3. [Get Homebrew and applications](#homebrew)
 4. [Setup git](#setup-git)
 
 ---
 
-## Install XCode and Xcode Command line tools
+## Download this project
 
-Install Xcode from the App store, then install Xcode Command line tools in terminal:
+Use OS git version or unzip:
 
 ```bash
-    # This step may be skipped, Homebrew will install this for you.
-    xcode-select --install
+    git clone https://github.com/rvantonisse/fed-mac-setup.git
+
+    cd fed-mac-setup
 ```
+
+Commands run from now on asume you are inside `fed-mac-setup/` directory.
 
 ---
 
-## Setup .bashrc && .bash_profile
+## Install software with Homebrew
+
+Install [Homebrew](https://brew.sh/):
+
+```bash
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+```
+
+Follow install instructions for Homebrew then after install software with Brewfile:
+
+```bash
+    brew tap homebrew/bundle && brew bundle
+```
+
+This will install everything listed inside Brewfile, run `cat` to list the software:
+
+```bash
+    cat Brewfile
+```
+---
+
+## Setup bash profile
 
 copy bash profile:
 
@@ -34,6 +56,10 @@ copy bash profile:
     cp ./bash-setup/bash_prompt.sh ~/bash_prompt.sh
 ```
 
+TODO:
+
+- [ ] Update with new `zsh` setup for macos 10.15 (Catalina) and newer.
+
 ---
 
 ## [Setup ssh key](https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
@@ -42,41 +68,6 @@ Follow steps and use for git / other ssh services.
 
 ---
 
-## [Homebrew](https://brew.sh/)
-
-Install:
-
-```bash
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-```
-
-
-Package manager for mac. Follow install instructions for Homebrew then after run:
-
-```bash
-    brew tap homebrew/bundle && brew bundle
-```
-
-This will install everything listed inside Brewfile.
-
-### [Caskroom/cask](https://caskroom.github.io/)
-
-Installs applications on command line.
-
-### Use Brewfile to install
-
-- Atom (editor)
-- Browsers (Chrome, Firefox)
-- iTerm (command line interface)
-- FileZilla
-- Virtualbox
-- nvm (node)
-- yarn (without node)
-- PHP, Composer
-- Python
-- rbenv (Ruby version manager)
-
----
 
 ## Setup Git
 
@@ -104,10 +95,6 @@ cp .git-setup/.gitconfig ~/ && atom .gitconfig
   nvm use node
   ```
 
----
+## TODO
 
-## Install Python utilities
-
-Use `pip install` for python global dependencies.
-
-- Check on [pipenv and virtualenv](http://docs.python-guide.org/en/latest/dev/virtualenvs/) for best approach.
+- [ ] Create `install_mac.sh` script.
