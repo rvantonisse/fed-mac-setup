@@ -2,10 +2,21 @@
 
 Utilities and install guide to setup a fresh mac install for Front-end development.
 
+Tech Stack installed:
+- Editor: Atom    
+
+- Code: node(nvm), yarn, php, composer, python(3 & 2), ruby(rbenv)
+
+- DevOps: git, git-extras, bash-completion, filezilla, httpd, dnsmasq, virtualbox
+
+- Browsers: Google Chrome, Firefox, Microsoft Edge
+
+---
+
 ## Table of contents
 
 0. [Download this project](#download-this-project)
-1. Install software with Homebrew
+1. [Install software with Homebrew](#install-software-with-homebrew)
 2. [Setup ssh key](#setup-ssh-key)
 4. [Setup git](#setup-git)
 
@@ -62,12 +73,6 @@ TODO:
 
 ---
 
-## [Setup ssh key](https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
-
-Follow steps and use for git / other ssh services.
-
----
-
 
 ## Setup Git
 
@@ -76,7 +81,17 @@ Follow steps and use for git / other ssh services.
 Copy the `.gitconfig` to `~/` and edit `<…>`-fields:
 
 ```bash
-cp .git-setup/.gitconfig ~/ && atom .gitconfig
+    cp .git-setup/.gitconfig ~/ && atom .gitconfig
+```
+
+### SSH setup
+
+Follow [Setup ssh key](https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account) from Github help.
+
+And copy config for ssh:
+
+```bash
+    cp ./ssh-setup/config ~/.ssh/config
 ```
 
 ---
@@ -97,4 +112,4 @@ cp .git-setup/.gitconfig ~/ && atom .gitconfig
 
 ## TODO
 
-- [ ] Create `install_mac.sh` script.
+- [ ] Create `grab_some_coffee.sh` script for convenience
