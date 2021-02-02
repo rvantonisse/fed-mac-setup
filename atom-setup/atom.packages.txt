@@ -26,3 +26,5 @@ transform
 chameleon-ui
 triad-dark-syntax
 triad-light-syntax
+developer-day-syntax
+developer-night-syntax
