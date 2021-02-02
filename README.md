@@ -7,7 +7,7 @@ Tech Stack installed:
 
 - Code: node(nvm), yarn, php, composer, python(3 & 2), ruby(rbenv)
 
-- DevOps: git, git-extras, bash-completion, filezilla, httpd, dnsmasq, virtualbox
+- DevOps: git, git-extras, shell-completion, filezilla, httpd, dnsmasq, virtualbox
 
 - Browsers: Google Chrome, Firefox, Microsoft Edge
 
@@ -26,7 +26,7 @@ Tech Stack installed:
 
 Use OS git version or unzip:
 
-```bash
+```shell
     git clone https://github.com/rvantonisse/fed-mac-setup.git
 
     cd fed-mac-setup
@@ -40,36 +40,40 @@ Commands run from now on asume you are inside `fed-mac-setup/` directory.
 
 Install [Homebrew](https://brew.sh/):
 
-```bash
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+```shell
+    /bin/shell -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
 Follow install instructions for Homebrew then after install software with Brewfile:
 
-```bash
+```shell
     brew tap homebrew/bundle && brew bundle
 ```
 
 This will install everything listed inside Brewfile, run `cat` to list the software:
 
-```bash
+```shell
     cat Brewfile
 ```
 ---
 
-## Setup bash profile
+## Setup shell profile
 
-copy bash profile:
+copy shell profile:
 
-```bash
-    cp ./bash-setup/bash_profile.sh ~/.bash_profile
+```shell
+    cp ./shell-setup/shell_profile.sh ~/.shell_profile
 
-    cp ./bash-setup/bash_prompt.sh ~/bash_prompt.sh
+    cp ./shell-setup/shell_prompt.sh ~/shell_prompt.sh
 ```
 
-TODO:
+Or alternatively **zsh** profile:
 
-- [ ] Update with new `zsh` setup for macos 10.15 (Catalina) and newer.
+```shell
+  cp ./zsh-setup/.zshrc ~/.zshrc
+```
+
+The brewfile installed the cli plugin Powerlevel10k which gives a nice interface for zsh.
 
 ---
 
@@ -80,7 +84,7 @@ TODO:
 
 Copy the `.gitconfig` to `~/` and edit `<…>`-fields:
 
-```bash
+```shell
     cp .git-setup/.gitconfig ~/ && atom .gitconfig
 ```
 
@@ -90,7 +94,7 @@ Follow [Setup ssh key](https://help.github.com/en/github/authenticating-to-githu
 
 And copy config for ssh:
 
-```bash
+```shell
     cp ./ssh-setup/config ~/.ssh/config
 ```
 
@@ -98,16 +102,12 @@ And copy config for ssh:
 
 ## Node with node version manager (nvm)
 
-- install latest node version:
+- With nvm command, install latest Long Term Support (lts) node version and set to default:
 
-  ```bash
-  nvm install node
-  ```
+  ```shell
+  nvm install --lts
 
-- Use it
-
-  ```bash
-  nvm use node
+  nvm alias default $(nvm version)
   ```
 
 ## TODO
