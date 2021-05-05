@@ -2,12 +2,14 @@
 
 Utilities and install guide to setup a fresh mac install for Front-end development.
 
-Tech Stack installed:
+Installs:
+- Homebrew package manager
+
 - Editor: Atom    
 
-- Code: node(nvm), yarn, php, composer, python(3 & 2), ruby(rbenv)
+- Code: nvm(node), php, composer, python, ruby(rbenv)
 
-- DevOps: git, git-extras, shell-completion, filezilla, httpd, dnsmasq, virtualbox
+- Developer tools: git, git-extras, bash-completion, filezilla, virtualbox
 
 - Browsers: Google Chrome, Firefox, Microsoft Edge
 
@@ -15,10 +17,17 @@ Tech Stack installed:
 
 ## Table of contents
 
+0. [Install Homebrew](#install-homebrew)
 0. [Download this project](#download-this-project)
 1. [Install software with Homebrew](#install-software-with-homebrew)
 2. [Setup ssh key](#setup-ssh-key)
 4. [Setup git](#setup-git)
+
+---
+
+## Install Homebrew
+
+Install [Homebrew](https://brew.sh)
 
 ---
 
@@ -37,24 +46,14 @@ Commands run from now on asume you are inside `fed-mac-setup/` directory.
 ---
 
 ## Install software with Homebrew
-
-Install [Homebrew](https://brew.sh/):
-
-```shell
-    /bin/shell -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-```
-
-Follow install instructions for Homebrew then after install software with Brewfile:
+Install using the Brewfile:
 
 ```shell
-    brew tap homebrew/bundle && brew bundle
+    brew bundle
 ```
 
-This will install everything listed inside Brewfile, run `cat` to list the software:
+This will tap `Homebrew/bundle` and install everything listed inside the `Brewfile`.
 
-```shell
-    cat Brewfile
-```
 ---
 
 ## Setup shell profile
