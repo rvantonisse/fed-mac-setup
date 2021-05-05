@@ -8,7 +8,7 @@ Used to quickly reinstall most used packages and configs.
 
 Clone this repo into `~/.atom`.
 
-Install listed packages in `packages-list.txt`:
+Install listed packages in `atom.packages.txt`:
 ```bash
     apm install --packages-file ./atom-setup/atom.packages.txt
 ```

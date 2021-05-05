@@ -12,7 +12,9 @@ language-apache
 language-babel
 language-nunjucks
 language-postcss
+language-svelte
 language-twig
+language-vue
 linter
 linter-eslint
 linter-stylelint

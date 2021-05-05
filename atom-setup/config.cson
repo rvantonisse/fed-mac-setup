@@ -10,7 +10,7 @@
     telemetryConsent: "limited"
     themes: [
       "chameleon-ui"
-      "triad-light-syntax"
+      "developer-day-syntax"
     ]
   date:
     dateFormat: "YYYY-MM-DD"
@@ -21,12 +21,23 @@
     userId: "f8817c57-018d-4f63-b862-30853b8b7c15"
   "file-icons":
     coloured: false
-  github: {}
+  github:
+    showDiffIconGutter: true
   "linter-eslint":
     autofix:
       ignoreFixableRulesWhileTyping: true
     global:
       globalNodePath: "/Users/rvantonisse/.nvm/versions/node/v8.12.0"
+    scopes: [
+      "source.js"
+      "source.jsx"
+      "source.js.jsx"
+      "source.flow"
+      "source.babel"
+      "source.js-semantic"
+      "text.html.vue"
+      "text.html.svelte"
+    ]
   "linter-ui-default":
     showPanel: true
   minimap:
@@ -34,14 +45,17 @@
       "git-diff": true
       "git-diffDecorationsZIndex": 0
   "prettier-atom":
-    prettierEslintOptions:
-      prettierLast: true
+    formatOnSaveOptions:
+      isDisabledIfNoConfigFile: true
+      isDisabledIfNotInPackageJson: true
+      showInStatusBar: true
+    prettierEslintOptions: {}
     useEslint: true
     useStylelint: true
   "theme-switch":
     profiles: [
-      "chameleon-ui triad-light-syntax"
-      "chameleon-ui triad-dark-syntax"
+      "chameleon-ui developer-day-syntax"
+      "chameleon-ui developer-night-syntax"
     ]
   welcome:
     showOnStartup: false
